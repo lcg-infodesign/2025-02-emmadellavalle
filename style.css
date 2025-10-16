@@ -1,8 +1,50 @@
-html, body {
+body {
   margin: 0;
-  padding: 0;
+  background: #0d0f12;
+  color: #eee;
+  font-family: system-ui, sans-serif;
+}
+
+#topbar {
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 8px;
+  max-width: 95%;
+}
+
+h1 {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+}
+
+p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+#canvas-holder {
+  margin-top: 3px; /* avvicina gli esagoni al topbar */
 }
 
 canvas {
   display: block;
+  margin: 0 auto 60px auto;
+  border-radius: 12px;
+  max-width: 98vw;
+  height: auto !important;
+}
+
+/* stato fisso in basso */
+#status {
+  color: #eee;
+  position: relative;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 100;
 }
